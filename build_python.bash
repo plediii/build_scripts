@@ -1,7 +1,7 @@
 #!/bin/bash
 #  Download and install PYTHON
 
-VERSION=2.7.2 # Once numpy is updated: 2.7 
+VERSION=2.7.2 
 ARCHIVE_EXT=.tgz
 ARCHIVE=Python-${VERSION}${ARCHIVE_EXT}
 TARGET_DIR=`basename ${ARCHIVE} ${ARCHIVE_EXT}`
