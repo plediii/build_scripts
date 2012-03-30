@@ -1,9 +1,9 @@
 #!/bin/bash
 #  Download and install emacs
 
-VERSION=23.3a
-ARCHIVE_EXT=a.tar.gz   # use basname with this to obtain the name of the directory we expect to see extracted
-ARCHIVE=emacs-${VERSION}.tar.gz
+VERSION=23.4
+ARCHIVE_EXT=.tar.gz   # use basname with this to obtain the name of the directory we expect to see extracted
+ARCHIVE=emacs-${VERSION}${ARCHIVE_EXT}
 ARCHIVE_LOCATION=http://ftp.gnu.org/pub/gnu/emacs/${ARCHIVE}
 TARGET_DIR=`basename ${ARCHIVE} ${ARCHIVE_EXT}`
 
