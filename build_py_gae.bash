@@ -81,7 +81,7 @@ BINDIR=${LOCAL_DIR}/bin
 echo 
 echo "${TAG} Linking exes to ${BINDIR}..."
 
-exes="dev_appserver.py"
+exes="dev_appserver.py appcfg.py"
 for exe in ${exes}; do
     link ${BINDIR} ${exe}
 done
