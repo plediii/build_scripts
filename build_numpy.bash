@@ -28,7 +28,7 @@ fi
 echo "${TAG} Downloading ${BUILD_TAG} version ${VERSION} in ${BUILD_DIR}"
 if [ ! -d ${TARGET_DIR} ]; then
     echo "${TAG} Downloading ${BUILD_TAG}"
-    [ ! -e ${ARCHIVE} ] && wget ${ARCHIVE_LOCATION}
+    [ ! -e ${ARCHIVE} ] && wget -O ${ARCHIVE} ${ARCHIVE_LOCATION}
     if [ ! -e ${ARCHIVE} ]; then
 	echo "${TAG} Unable to download ${ARCHIVE} from ${ARCHIVE_LOCATION}"
 	exit 1
