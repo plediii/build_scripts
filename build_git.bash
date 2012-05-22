@@ -1,11 +1,11 @@
 #!/bin/bash
 # Download and install git
 
-VERSION=1.7.1 
-ARCHIVE=git-${VERSION}.tar.bz2
-ARCHIVE_EXT=.tar.bz2
+VERSION=1.7.10.2
+ARCHIVE_EXT=.tar.gz
+ARCHIVE=git-${VERSION}${ARCHIVE_EXT}
 TARGET_DIR=`basename ${ARCHIVE} ${ARCHIVE_EXT}`
-ARCHIVE_LOCATION=http://kernel.org/pub/software/scm/git/${ARCHIVE}
+ARCHIVE_LOCATION=http://git-core.googlecode.com/files/${ARCHIVE}
 
 BUILD_TAG=git${VERSION}
 LOCAL_DIR=${HOME}/local
@@ -23,7 +23,7 @@ if [ ! -d ${TARGET_DIR} ]; then
 	echo "${TAG} Failed to download from ${ARCHIVE_LOCATION}."
 	exit 1
     fi
-    tar -xjf ${ARCHIVE}
+    tar -xzf ${ARCHIVE}
 fi
 if [ ! -d ${TARGET_DIR} ]; then
     echo "${TAG} Failed to extract ${ARCHIVE}."
