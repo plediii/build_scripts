@@ -3,12 +3,12 @@
 
 
 BUILD_TAG=hdf5
-VERSION=1.8.7
+VERSION=1.8.9
 ARCHIVE_EXT=.tar.gz
 TARGET_DIR=${BUILD_TAG}-${VERSION}
 ARCHIVE=${TARGET_DIR}${ARCHIVE_EXT}
 #ARCHIVE_LOCATION=http://www.hdfgroup.org/ftp/HDF5/current/src/${ARCHIVE}
-ARCHIVE_LOCATION=http://www.hdfgroup.org/ftp/HDF5/hdf5-${VERSION}/src/${ARCHIVE}
+ARCHIVE_LOCATION=http://www.hdfgroup.org/ftp/HDF5/current/src/${ARCHIVE}
 
 
 LOCAL_DIR=${HOME}/local
