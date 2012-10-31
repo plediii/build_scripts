@@ -1,7 +1,7 @@
 #!/bin/bash
 # Download and install git
 
-VERSION=1.7.10.2
+VERSION=1.8.0
 ARCHIVE_EXT=.tar.gz
 ARCHIVE=git-${VERSION}${ARCHIVE_EXT}
 TARGET_DIR=`basename ${ARCHIVE} ${ARCHIVE_EXT}`
