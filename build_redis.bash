@@ -3,12 +3,12 @@
 
 
 BUILD_TAG=redis
-VERSION=2.6.9
+VERSION=2.6.16
 ARCHIVE_EXT=.tar.gz
 ARCHIVE=${BUILD_TAG}-${VERSION}${ARCHIVE_EXT}
 TARGET_DIR=`basename ${ARCHIVE} ${ARCHIVE_EXT}`
 ${TARGET_DIR}${ARCHIVE_EXT}
-ARCHIVE_LOCATION=http://redis.googlecode.com/files/${ARCHIVE}
+ARCHIVE_LOCATION=http://download.redis.io/releases/${ARCHIVE}
 
 LOCAL_DIR=${HOME}/local
 mkdir -p ${LOCAL_DIR}
