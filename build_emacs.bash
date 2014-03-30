@@ -1,7 +1,7 @@
 #!/bin/bash
 #  Download and install emacs
 
-VERSION=23.4
+VERSION=24.3
 ARCHIVE_EXT=.tar.gz   # use basname with this to obtain the name of the directory we expect to see extracted
 ARCHIVE=emacs-${VERSION}${ARCHIVE_EXT}
 ARCHIVE_LOCATION=http://ftp.gnu.org/pub/gnu/emacs/${ARCHIVE}
@@ -50,9 +50,6 @@ if [ $? != 0 ]; then
 	exit
     fi 
 fi
-BOOTSTRAP_OUT=bootstrap.out
-echo "${TAG} make bootstrap >& ${BOOTSTRAP_OUT}"
-make bootstrap >& ${BOOTSTRAP_OUT}
 BUILD_OUT=make.out
 echo "${TAG} Building >& ${BUILD_OUT}"
 make >& ${BUILD_OUT}
