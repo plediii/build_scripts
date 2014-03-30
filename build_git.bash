@@ -1,7 +1,7 @@
 #!/bin/bash
 # Download and install git
 
-VERSION=1.8.0
+VERSION=1.9.0
 ARCHIVE_EXT=.tar.gz
 ARCHIVE=git-${VERSION}${ARCHIVE_EXT}
 TARGET_DIR=`basename ${ARCHIVE} ${ARCHIVE_EXT}`
@@ -42,7 +42,7 @@ echo "${TAG} Configuring >& ${CONFIGURE_OUT}"
 # I have to set libcurl's prefix manually.  This isn't always the
 # right location.  It should be configure's job to find it.  What's
 # wrong?
-CC=gcc ./configure --prefix=${LOCAL_DIR} --with-curl=/usr/lib64 >& ${CONFIGURE_OUT}
+CC=gcc ./configure --prefix=${LOCAL_DIR} --with-curl=/usr/lib64 --with-tcltk >& ${CONFIGURE_OUT}
 if [ $? != 0 ]; then
     tail ${CONFIGURE_OUT}
     echo "${TAG} Failed to configure ${BUILD_TAG} (check ${CONFIGURE_OUT})"
