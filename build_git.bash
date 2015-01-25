@@ -1,11 +1,11 @@
 #!/bin/bash
 # Download and install git
 
-VERSION=1.9.0
+VERSION=2.2.2
 ARCHIVE_EXT=.tar.gz
 ARCHIVE=git-${VERSION}${ARCHIVE_EXT}
 TARGET_DIR=`basename ${ARCHIVE} ${ARCHIVE_EXT}`
-ARCHIVE_LOCATION=http://git-core.googlecode.com/files/${ARCHIVE}
+ARCHIVE_LOCATION=https://www.kernel.org/pub/software/scm/git/${ARCHIVE}
 
 BUILD_TAG=git${VERSION}
 LOCAL_DIR=${HOME}/local
