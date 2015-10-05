@@ -3,7 +3,7 @@
 
 
 BUILD_TAG=nginx
-VERSION=1.4.1
+VERSION=1.8.0
 ARCHIVE_EXT=.tar.gz
 ARCHIVE=${BUILD_TAG}-${VERSION}${ARCHIVE_EXT}
 TARGET_DIR=`basename ${ARCHIVE} ${ARCHIVE_EXT}`
@@ -34,7 +34,7 @@ cd ${TARGET_DIR}
 
 CONFIGURE_OUT=configure.out
 echo "${TAG} ./configure >& ${CONFIGURE_OUT}"
-./configure --prefix=${LOCAL_DIR} --user=www-data --group=www-data --with-http_ssl_module --with-http_realip_module  --with-http_gzip_static_module --with-http_secure_link_module --with-http_degradation_module  --with-http_xslt_module --with-http_geoip_module --with-http_sub_module --with-http_dav_module --with-http_flv_module --with-http_mp4_module  --with-http_stub_status_module  --with-http_random_index_module  --with-http_perl_module --with-http_addition_module   --with-http_image_filter_module  >& ${CONFIGURE_OUT} 
+./configure --prefix=${LOCAL_DIR} --user=www-data --group=www-data --with-http_ssl_module --with-http_realip_module  --with-http_gzip_static_module --with-http_secure_link_module --with-http_degradation_module --with-http_sub_module --with-http_mp4_module  --with-http_stub_status_module  --with-http_random_index_module   --with-http_addition_module  >& ${CONFIGURE_OUT} 
 
 mkdir -p ${LOCAL_DIR}
 
